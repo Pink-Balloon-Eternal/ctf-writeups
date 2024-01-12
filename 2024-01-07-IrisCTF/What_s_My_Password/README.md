@@ -161,7 +161,7 @@ We can see that the SQL query that is used when we try to login is the following
 After that we can use any "gestionnaire" of database to perform many payload sql injection and find the good one.
 
 in my case i use xamp. i open phpadmin and uplod my database(setup.sql)
-and put this payload: ``` ="" =" ```
+and put this payload: ``` "" =" ```
 
 ![Screenshot_1](./Screenshot_1.png)
 
@@ -172,6 +172,8 @@ We used Burp Suite as a proxy to see the response of our HTTP requests:
 In order to retrieve the flag, the payload we need to use is the following:
 
 - Username: ```skat```
-- Password: ```="" ="```
+- Password: ```"" ="```
 
 The flag returned is the following: ```irisctf{}```
+
+![Screenshot_2](./Screenshot_2.png)
