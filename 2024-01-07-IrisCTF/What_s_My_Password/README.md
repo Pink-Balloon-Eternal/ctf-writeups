@@ -163,7 +163,7 @@ After that we can use any "gestionnaire" of database to perform many payload sql
 in my case i use xamp. i open phpadmin and uplod my database(setup.sql)
 and put this payload: ``` ="" =" ```
 
-![Screenshot_1](./Screenshot_1.png)
+![screenshot_1](./Screenshot_1.jpg)
 
 
 
