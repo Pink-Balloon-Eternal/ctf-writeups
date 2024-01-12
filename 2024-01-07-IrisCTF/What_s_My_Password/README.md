@@ -174,6 +174,6 @@ In order to retrieve the flag, the payload we need to use is the following:
 - Username: ```skat```
 - Password: ```"" ="```
 
-The flag returned is the following: ```irisctf{}```
+The flag returned is the following: ```irisctf{my_p422WORD_IS_SQLL}```
 
 ![Screenshot_2](./Screenshot_2.png)
