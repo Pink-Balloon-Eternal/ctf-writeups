@@ -155,13 +155,21 @@ Our goal is to retrieve the password of skat from the MySQL database.
 
 We can see that the SQL query that is used when we try to login is the following:
 
-```SELECT * FROM users WHERE username = \"%s\" AND password = \"%s\"```   sampiass
+```SELECT * FROM users WHERE username = \"%s\" AND password = \"%s\"``` 
+
+
+After that we can use any "gestionnaire" of database to perform many payload sql injection and find the good one.
+
+in my case i use xamp. i open phpadmin and uplod my database(setup.sql)
+and put this payload: ``` ="" =" ```
+
+
 
 We used Burp Suite as a proxy to see the response of our HTTP requests:
 
 In order to retrieve the flag, the payload we need to use is the following:
 
 - Username: ```skat```
-- Password: ```" or ""="```
+- Password: ```="" ="```
 
 The flag returned is the following: ```irisctf{}```
